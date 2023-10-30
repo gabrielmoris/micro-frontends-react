@@ -1,15 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
 import "./index.scss";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const App = () => (
-  <div className="mt-10 text-3xl mx-auto max-w-6xl">
-    <div>Name: home</div>
-    <div>Framework: react</div>
-    <div>Language: JavaScript</div>
-    <div>CSS: Tailwind</div>
-    <a href="https://blog.logrocket.com/build-micro-frontend-application-react/?ref=dailydev"> LINK to the project</a>
+  <div className="text-3xl mx-auto max-w-6xl flex flex-col justify-between h-screen w-screen">
+    <Header />
+    <div className="my-10">Home page Content</div>
+    <Footer />
   </div>
 );
+
 ReactDOM.render(<App />, document.getElementById("app"));
